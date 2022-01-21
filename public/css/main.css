@@ -1,0 +1,48 @@
+body {
+  padding-top: 50px;
+}
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+.navbar-brand img {
+  width: 24px;
+}
+
+.avatar {
+  max-width: 480px;
+  margin-bottom: 20px;
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.custom-select{
+  width: 100%;
+}
+.button-custom{
+  margin-top: 15px;
+}
+.border-l{
+  border-left: 1px solid slategrey;
+}
+.border-r{
+  border-right: 1px solid slategrey;
+}
+.border-t{
+  border-top: 1px solid slategrey;
+}
+.border-b{
+  border-bottom: 1px solid slategrey;
+}
+.td-table{
+  text-align: center;
+  padding-left: 15px;
+  padding-left: 15px;
+}

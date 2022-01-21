@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="col-sm-6 border-b td-table">
+      <h4>Mes</h4> 
+    </div>
+    <div class="col-sm-6 border-b td-table">
+      <h4> total</h4> 
+    </div>
+    <div ng-repeat="value in datas " class="col-sm-12 border-l border-r" >
+      <div class="col-sm-6  td-table">
+        <div class="border-b">
+          {{value.mes}}
+        </div>
+      </div>
+      <div  class="col-sm-6  td-table">
+        <div class="border-b">
+          {{value.total | number:2  | Moneda}}
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+</div>

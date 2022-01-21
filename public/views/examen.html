@@ -1,0 +1,53 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-4">
+      <h6>Familia</h6>      
+      <select class="custom-select"  ng-model="filtro.family" >
+        <option ng-repeat="cb in familias" value="{{cb.value}}">{{cb.descripcion}}</option>
+      </select>
+    </div>
+    <div class="col-sm-12 col-lg-4"> 
+      <h6>Metrica</h6>      
+      <select class="custom-select"  ng-model="filtro.metrica">
+        <option ng-repeat="cb in metricas" value="{{cb.value}}">{{cb.descripcion}}</option>
+      </select>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <h6>Año</h6>          
+      <select class="custom-select" ng-model="filtro.year" >
+        <option ng-repeat="cb in years" value="{{cb.value}}">{{cb.descripcion}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="row button-custom">
+    <div class="col-sm-12">
+      <button ng-click="Filtrar()" type="button" class="btn btn-success">Filtrar</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-sm-6 border-b td-table">
+        <h4>Mes</h4> 
+      </div>
+      <div class="col-sm-6 border-b td-table">
+        <h4>{{ filtro.metrica | uppercase}}</h4> 
+      </div>
+      <div ng-repeat="asientos in asientosMensuales" class="col-sm-12 border-l border-r" >
+        <div class="col-sm-6  td-table">
+          <div class="border-b">
+            {{asientos.mes}}
+          </div>
+        </div>
+        <div  class="col-sm-6  td-table">
+          <div class="border-b">
+            {{asientos.total | number:2  | Moneda}}
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+</div>
